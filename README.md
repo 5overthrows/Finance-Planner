@@ -1,16 +1,50 @@
-# React + Vite
+# Personal Finance Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+The Personal Finance Manager is a web-based application developed using React, designed to help users efficiently track, manage, and analyze their financial activities. It provides a structured approach to handling personal finances through real-time data processing and an intuitive user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Income and Expense Tracking  
+  Record and categorize all financial transactions in a centralized system.
 
-## React Compiler
+- Budget Management  
+  Create and monitor budgets to maintain financial discipline.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Savings Goal Tracking  
+  Set financial goals and track progress over time.
 
-## Expanding the ESLint configuration
+- Debt Management  
+  Monitor outstanding liabilities and repayment status.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Monthly Analytics  
+  Generate insights and summaries to understand spending patterns and financial health.
+
+## System Architecture
+
+The application follows a single source of truth architecture implemented using the React Context API. This ensures consistent state management and reliable data flow across all components.
+
+Additionally, the system adopts event sourcing principles:
+
+- All financial activities are recorded as immutable transactions  
+- Financial metrics such as balances, savings progress, and debt status are derived dynamically from transaction data  
+
+## Objectives
+
+- Enhance financial awareness among users  
+- Encourage disciplined and informed financial decision-making  
+- Provide a clean and user-friendly interface  
+- Deliver accurate, real-time financial insights  
+
+## Technology Stack
+
+- Frontend: React  
+- State Management: React Context API  
+- Architectural Pattern: Event Sourcing  
+
+## Future Enhancements
+
+- Advanced data visualization (charts and dashboards)  
+- Export functionality (PDF and CSV reports)  
+- User authentication and profile management  
+- Cloud-based data storage and synchronization  
